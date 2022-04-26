@@ -1,8 +1,8 @@
+/* eslint-disable react/react-in-jsx-scope */
 import ToolPage from "./components/ToolPage";
 import "./App.scss";
-/* eslint-disable react/react-in-jsx-scope */
 const App = () => {
-	return (<ToolPage/>);
+	return <ToolPage />;
 };
 
 export default App;

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import React, {StrictMode}from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 

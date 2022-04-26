@@ -1,6 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
 import style from "./tool.module.scss";
-
 interface Props {
   title: string;
   link: string;

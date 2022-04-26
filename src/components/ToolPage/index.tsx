@@ -45,9 +45,9 @@ const ToolPage = () => {
 						tags={tool.tags}
 					/>
 				</div>;
-			})};
+			})}
+      ;
 		</>
-
 	);
 };
 
