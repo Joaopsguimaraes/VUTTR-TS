@@ -1,26 +1,24 @@
 /* eslint-disable react/react-in-jsx-scope */
 import style from "./tool.module.scss";
 
-const Tool = () =>{
-	return(
-		<ul>
-			<li className={style.toolContainer}>
-				<h3>React</h3>
-				<p>React is framework to developer frontend, use Javascript or typescriot</p>
-				<span>#framework #react #javascript</span>
-			</li>
-			<li className={style.toolContainer}>
-				<h3>React</h3>
-				<p>React is framework to developer frontend, use Javascript or typescriot</p>
-				<span>#framework #react #javascript</span>
-			</li>
-			<li className={style.toolContainer}>
-				<h3>React</h3>
-				<p>React is framework to developer frontend, use Javascript or typescriot</p>
-				<span>#framework #react #javascript</span>
-			</li>
-    
-		</ul>
+interface Props {
+  title: string;
+  link: string;
+  description: string;
+  tags: string;
+}
+
+const Tool = ({ title, link, description, tags }: Props) => {
+	return (
+		<>
+			<div className={style.toolContainer}>
+				<a href={link} target="_blank" rel="noreferrer">
+					<h3>{title}</h3>
+				</a>
+				<p>{description}</p>
+				<span>{tags}</span>
+			</div>
+		</>
 	);
 };
 
